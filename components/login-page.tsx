@@ -102,7 +102,7 @@ export function LoginPage({ onLogin }: LoginPageProps) {
       <div className="relative z-10 min-h-screen flex">
         {/* Right Side - Form (moved to right) */}
         <div className="w-full lg:w-1/2 flex items-center justify-center p-8 lg:order-2">
-          <Card className="w-full max-w-md bg-white/95 backdrop-blur-xl border-0 shadow-2xl shadow-red-900/50 rounded-3xl overflow-hidden">
+          <Card className="w-full max-w-md bg-red-900/40 backdrop-blur-xl border border-red-400/30 shadow-2xl shadow-red-900/50 rounded-3xl overflow-hidden">
             <CardContent className="p-8">
               {/* Logo at top of form */}
               <div className="flex items-center justify-center gap-3 mb-6">
@@ -110,19 +110,19 @@ export function LoginPage({ onLogin }: LoginPageProps) {
                   <Bus className="h-8 w-8 text-white" />
                 </div>
                 <div>
-                  <h1 className="text-2xl font-black text-red-900">BusMate</h1>
-                  <p className="text-xs text-red-600">Bangalore Transit</p>
+                  <h1 className="text-2xl font-black text-white">BusMate</h1>
+                  <p className="text-xs text-red-200">Bangalore Transit</p>
                 </div>
               </div>
 
               {/* Tab buttons - rearranged as pills */}
-              <div className="flex gap-2 mb-6 bg-red-100 p-1 rounded-xl">
+              <div className="flex gap-2 mb-6 bg-red-950/50 p-1 rounded-xl">
                 <button
                   onClick={() => setActiveTab("login")}
                   className={`flex-1 py-2.5 text-sm font-bold rounded-lg transition-all ${
                     activeTab === "login"
                       ? "bg-gradient-to-r from-red-500 to-rose-500 text-white shadow-md"
-                      : "text-red-600 hover:text-red-700"
+                      : "text-red-200 hover:text-white"
                   }`}
                 >
                   Sign In
@@ -132,7 +132,7 @@ export function LoginPage({ onLogin }: LoginPageProps) {
                   className={`flex-1 py-2.5 text-sm font-bold rounded-lg transition-all ${
                     activeTab === "signup"
                       ? "bg-gradient-to-r from-red-500 to-rose-500 text-white shadow-md"
-                      : "text-red-600 hover:text-red-700"
+                      : "text-red-200 hover:text-white"
                   }`}
                 >
                   Sign Up
@@ -142,36 +142,36 @@ export function LoginPage({ onLogin }: LoginPageProps) {
               <form onSubmit={handleSubmit} className="space-y-4">
                 {activeTab === "signup" && (
                   <div>
-                    <label className="block text-sm font-semibold text-red-900 mb-1.5">Full Name</label>
+                    <label className="block text-sm font-semibold text-red-100 mb-1.5">Full Name</label>
                     <Input
                       type="text"
                       placeholder="Enter your name"
-                      className="h-12 rounded-xl border-2 border-red-200 focus:border-red-500 focus:ring-red-500/20"
+                      className="h-12 rounded-xl border-0 bg-red-950/50 text-white placeholder:text-red-300/50 focus:ring-2 focus:ring-red-400/50"
                     />
                   </div>
                 )}
 
                 <div>
-                  <label className="block text-sm font-semibold text-red-900 mb-1.5">Email</label>
+                  <label className="block text-sm font-semibold text-red-100 mb-1.5">Email</label>
                   <Input
                     type="email"
                     placeholder="you@example.com"
-                    className="h-12 rounded-xl border-2 border-red-200 focus:border-red-500 focus:ring-red-500/20"
+                    className="h-12 rounded-xl border-0 bg-red-950/50 text-white placeholder:text-red-300/50 focus:ring-2 focus:ring-red-400/50"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold text-red-900 mb-1.5">Password</label>
+                  <label className="block text-sm font-semibold text-red-100 mb-1.5">Password</label>
                   <div className="relative">
                     <Input
                       type={showPassword ? "text" : "password"}
                       placeholder="••••••••"
-                      className="h-12 rounded-xl border-2 border-red-200 focus:border-red-500 focus:ring-red-500/20 pr-12"
+                      className="h-12 rounded-xl border-0 bg-red-950/50 text-white placeholder:text-red-300/50 focus:ring-2 focus:ring-red-400/50 pr-12"
                     />
                     <button
                       type="button"
                       onClick={() => setShowPassword(!showPassword)}
-                      className="absolute right-3 top-1/2 -translate-y-1/2 text-red-400 hover:text-red-600 transition-colors"
+                      className="absolute right-3 top-1/2 -translate-y-1/2 text-red-300 hover:text-white transition-colors"
                     >
                       {showPassword ? <EyeOff className="h-5 w-5" /> : <Eye className="h-5 w-5" />}
                     </button>
@@ -181,10 +181,10 @@ export function LoginPage({ onLogin }: LoginPageProps) {
                 {activeTab === "login" && (
                   <div className="flex items-center justify-between">
                     <label className="flex items-center gap-2 cursor-pointer">
-                      <input type="checkbox" className="w-4 h-4 rounded border-gray-300 text-red-500 focus:ring-red-500" />
-                      <span className="text-sm text-gray-600">Remember me</span>
+                      <input type="checkbox" className="w-4 h-4 rounded border-red-400/30 bg-red-950/50 text-red-500 focus:ring-red-500" />
+                      <span className="text-sm text-red-200">Remember me</span>
                     </label>
-                    <button type="button" className="text-sm text-red-600 hover:text-red-700 font-medium">
+                    <button type="button" className="text-sm text-red-300 hover:text-white font-medium">
                       Forgot password?
                     </button>
                   </div>
