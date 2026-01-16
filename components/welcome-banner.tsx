@@ -80,7 +80,7 @@ export function WelcomeBanner() {
           </Link>
           <Link href="/routes">
             <Button 
-              className="bg-red-50 text-red-600 hover:bg-white font-bold shadow-lg shadow-red-500/20 hover:shadow-xl rounded-xl px-6 transition-all hover:-translate-y-0.5 hover:scale-105 border-2 border-white/40"
+              className="bg-white text-red-600 hover:bg-red-50 font-bold shadow-lg shadow-red-500/30 hover:shadow-xl rounded-xl px-6 transition-all hover:-translate-y-0.5 hover:scale-105"
             >
               View All Routes
             </Button>
