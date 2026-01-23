@@ -229,14 +229,14 @@ export function Header({ onLogout, onNavigate, activeSection = 'home' }: HeaderP
               }}
             >
               <div className="h-8 w-8 rounded-full bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center text-white font-bold text-sm">
-                J
+                A
               </div>
             </Button>
             {showProfile && (
               <div className="absolute right-0 top-12 w-56 bg-white rounded-2xl shadow-2xl border-2 border-green-200 overflow-hidden z-50">
                 <div className="p-4 bg-gradient-to-r from-green-500 to-emerald-500 text-white">
-                  <p className="font-bold">Hello, J Sreevatsa!</p>
-                  <p className="text-sm text-green-100">jsreevatsa@busmate.in</p>
+                  <p className="font-bold">Hello, Admin!</p>
+                  <p className="text-sm text-green-100">admin@busmate.in</p>
                 </div>
                 <div className="p-2">
                   <button 

@@ -282,8 +282,8 @@ export function BusMateApp() {
       <div className="bg-gradient-to-r from-red-800 via-red-900 to-red-800 text-white text-center py-2.5 relative z-20 border-b-2 border-red-400/50 shadow-lg shadow-red-500/20">
         <p className="text-sm font-bold flex items-center justify-center gap-2 tracking-wide">
           <Sparkles className="h-4 w-4 animate-pulse text-red-300" />
-          <span className="text-red-200">Made by</span>
-          <span className="text-white font-black text-base bg-red-500/30 px-2 py-0.5 rounded">J Sreevatsa</span>
+          <span className="text-red-200">A Group Project Made For </span>
+          <span className="text-white font-black text-base bg-red-500/30 px-2 py-0.5 rounded">Banglore Buses </span>
           <Sparkles className="h-4 w-4 animate-pulse text-red-300" />
         </p>
       </div>
@@ -498,7 +498,7 @@ export function BusMateApp() {
             </div>
           </div>
           <div className="mt-8 pt-4 border-t border-red-500/30 text-center">
-            <p className="text-red-400 font-black text-lg mb-2">Created by J Sreevatsa</p>
+            <p className="text-red-400 font-black text-lg mb-2">Made For Bangalore </p>
             <p className="text-sm text-red-300/60">© 2026 BusMate. Bangalore Metropolitan Transport Corporation</p>
           </div>
         </div>
